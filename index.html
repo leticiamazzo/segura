@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SEGURA | Transporte por aplicativo de mulheres para mulheres</title>
+<meta name="description" content="Corridas só com mulheres: motoristas e passageiras verificadas. Entre na lista de espera do SEGURA.">
+<meta name="theme-color" content="#FFF1F6">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="logo" href="#inicio" aria-label="SEGURA - início">
+    <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.3 8 11 4.6-1.7 8-6 8-11V5l-8-3Z" fill="#E0568A"/><path d="m8.5 12 2.5 2.5 4.5-5" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Segura
+  </a>
+  <nav>
+    <a href="#como-funciona">Como funciona</a>
+    <a href="#diferenciais">Diferenciais</a>
+    <a href="#comparativo">Comparativo</a>
+    <a class="btn btn-sm" href="#cadastro">Quero entrar</a>
+  </nav>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="hero-text">
+      <p class="pill">🌸 Em breve em São Paulo</p>
+      <h1>Chegue em casa tranquila, com quem entende você.</h1>
+      <p class="lead">O SEGURA conecta mulheres que precisam de transporte a motoristas mulheres. Perfis verificados, corrida monitorada e a confiança que você merece em cada trajeto.</p>
+      <ul class="checks">
+        <li>Apenas mulheres no app, passageiras e motoristas</li>
+        <li>Verificação de identidade em todos os cadastros</li>
+        <li>Corrida monitorada e compartilhável em tempo real</li>
+      </ul>
+    </div>
+
+    <div class="hero-form" id="cadastro">
+      <form id="leadForm" novalidate>
+        <h2>Entre na lista de espera</h2>
+        <p class="sub">Seja a primeira a saber quando o app abrir. É grátis e leva 1 minuto.</p>
+
+        <div class="field">
+          <label for="nome">Seu nome</label>
+          <input id="nome" name="nome" type="text" autocomplete="name" placeholder="Maria Silva" required>
+          <small class="err"></small>
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="maria@email.com" required>
+          <small class="err"></small>
+        </div>
+        <div class="field">
+          <label for="telefone">WhatsApp</label>
+          <input id="telefone" name="telefone" type="tel" autocomplete="tel" inputmode="numeric" placeholder="(11) 99999-9999" required>
+          <small class="err"></small>
+        </div>
+
+        <fieldset class="field">
+          <legend>Eu quero ser</legend>
+          <div class="choice">
+            <label><input type="radio" name="perfil" value="passageira" checked><span>Passageira</span></label>
+            <label><input type="radio" name="perfil" value="motorista"><span>Motorista</span></label>
+          </div>
+        </fieldset>
+
+        <label class="consent">
+          <input type="checkbox" id="consent" name="consent" required>
+          <span>Aceito receber novidades do SEGURA e concordo com o uso dos meus dados conforme a LGPD.</span>
+        </label>
+        <small class="err" id="consentErr"></small>
+
+        <button class="btn btn-block" type="submit" id="submitBtn">Quero fazer parte</button>
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="success" id="success" hidden>
+        <div class="heart">💗</div>
+        <h2>Pronto, você está na lista!</h2>
+        <p>Obrigada, <strong id="successName"></strong>. Vamos avisar você por e-mail e WhatsApp assim que o SEGURA estiver disponível.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="numbers" aria-label="Por que existe o SEGURA">
+    <p><strong>Nosso ponto de partida:</strong> muitas mulheres já pensaram duas vezes antes de entrar num carro dirigido por um desconhecido. O SEGURA nasceu para acabar com esse receio.</p>
+  </section>
+
+  <section class="sec" id="como-funciona">
+    <h2>Como funciona</h2>
+    <p class="sec-sub">Pedir uma corrida continua simples. A diferença é quem está do outro lado.</p>
+    <ol class="steps">
+      <li><span class="n">1</span><h3>Crie seu perfil</h3><p>Cadastro com verificação de identidade para passageiras e motoristas.</p></li>
+      <li><span class="n">2</span><h3>Peça sua corrida</h3><p>Informe o destino e veja o perfil e a avaliação da motorista antes de embarcar.</p></li>
+      <li><span class="n">3</span><h3>Viaje monitorada</h3><p>Compartilhe o trajeto com quem você ama e conte com o botão de ajuda.</p></li>
+    </ol>
+  </section>
+
+  <section class="sec tint" id="diferenciais">
+    <h2>Pensado para dar segurança de verdade</h2>
+    <div class="grid">
+      <article><div class="ic">🛡️</div><h3>Só mulheres</h3><p>Motoristas e passageiras, sem exceção. Cada perfil é conferido antes da aprovação.</p></article>
+      <article><div class="ic">📍</div><h3>Monitoramento</h3><p>Trajeto acompanhado em tempo real e compartilhável com contatos de confiança.</p></article>
+      <article><div class="ic">🆘</div><h3>Botão de ajuda</h3><p>Acesso rápido a ajuda durante a corrida, para você agir em segundos.</p></article>
+      <article><div class="ic">💼</div><h3>Renda para motoristas</h3><p>Um ambiente mais seguro e acolhedor para mulheres que querem dirigir e ganhar.</p></article>
+    </div>
+  </section>
+
+  <section class="sec" id="comparativo">
+    <h2>Por que o SEGURA é diferente</h2>
+    <p class="sec-sub">Apps como Uber e 99 são úteis, mas não garantem exclusividade para mulheres.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Recurso</th><th class="us">SEGURA</th><th>Apps tradicionais</th></tr></thead>
+        <tbody>
+          <tr><td>Motoristas apenas mulheres</td><td class="us">✔ Sempre</td><td>Não, ou com limitações</td></tr>
+          <tr><td>Passageiras apenas mulheres</td><td class="us">✔ Sempre</td><td>Não</td></tr>
+          <tr><td>Verificação de perfis</td><td class="us">✔ Rigorosa</td><td>Varia</td></tr>
+          <tr><td>Monitoramento da corrida</td><td class="us">✔ Em tempo real</td><td>Parcial</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p><strong>Segura</strong> · Transporte por aplicativo de mulheres para mulheres</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
